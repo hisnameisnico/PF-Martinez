@@ -1,69 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 
 *{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* INDEX / INICIO */
+
 body{
-    background-color: rgb(230, 136, 154);
+    background-image: url(../img/sewing-pattern.jpg);
+    background-attachment: fixed;
 }
 
-nav{
-    background-color: rgb(230, 136, 154);
-    padding: 8px 20px;
-    
-}
-
-nav ul{
-    display: inline-block;
-    
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    list-style-type: none;
-    
-}
-
+    nav{
+        background-color: rgb(230, 136, 154);
+        padding: 8px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+            nav ul li{
+                margin: 30px;
+            }
+                nav ul li a{
+                    text-decoration: none;
+                    color: white;
+                }
+                    nav ul li a:hover{
+                        color: black;
+                    }
 h1{
-    color: white;
-    
+    color: black;
 }
 
-footer{
-    background-color: rgb(191, 174, 153);
+section div h1{
+    color: black;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+section div p{
+    line-height: 45px;
+    font-size: 20px;
+    padding: 10px 30px;
+}
+footer p{
+    margin-top: 20px;
 }
 
-.center{
+.center-txt{
     text-align: center;
 }
 
-.verySmall{
-    font-size: 12px;
-}
-
-.servicios__titles{
-    font-size: 30px;
-    color: white;
-    text-align: center;
-    
-}
-
-.servicios__p--dashed{
-    border: dashed 4px rgb(242, 5, 135);
-    text-align: center;
-}
-
-.servicios{
+.model{
     width: 80%;
     height: auto;
     margin: 50px auto;
     padding: 20px 30px;
-    border: none;
 }
 
-/* TALLER */
+.footer{
+    font-size: 0.8em;
+    text-align: center;
+    background-color: rgb(191, 174, 153);
+    padding: 30px 30px;
+}
 
+.header-img{
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.div-model{
+    width: 65%;
+    height: auto;
+    margin: 30px 30px;
+    padding: 30px 30px;
+    border: dashed 5px rgb(230, 136, 154);
+}
+
+.img-model{
+    width: 35%;
+    height: auto;
+    margin: 20px 30px;
+    padding: 10px 30px;
+}
+
+/* SERVICIOS */
+
+.serv-h1{
+    margin-bottom: 50px;
+}
+
+.servicios-titles{
+    font-size: 2em;
+    color: black;
+    padding: 20px 30px;
+}
+
+.servicios-p{
+    border: dashed 5px rgb(230, 136, 154);
+    line-height: 40px;
+    margin: 20px 30px;
+    padding: 20px 30px;
+}
