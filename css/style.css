@@ -11,7 +11,7 @@
 body{
     background-image: url(../img/sewing-pattern.jpg);
     background-attachment: fixed;
-    /* overflow-x: hidden; */
+    /* overflow-x: hidden;  */
 }
 
 nav{
