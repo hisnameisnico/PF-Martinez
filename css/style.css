@@ -11,33 +11,45 @@
 body{
     background-image: url(../img/sewing-pattern.jpg);
     background-attachment: fixed;
+    /* overflow-x: hidden; */
 }
 
-    nav{
-        background-color: rgb(230, 136, 154);
-        padding: 8px 20px;
+nav{
+    background-color: rgb(230, 136, 154);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    nav ul{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        list-style: none;
     }
-        nav ul{
-            display: flex;
-            list-style: none;
+        nav ul li{
+            margin: 30px;
         }
-            nav ul li{
-                margin: 30px;
+            nav ul li a{
+                text-decoration: none;
+                color: white;
             }
-                nav ul li a{
-                    text-decoration: none;
-                    color: white;
+                nav ul li a:hover{
+                    color: black;
                 }
-                    nav ul li a:hover{
-                        color: black;
-                    }
+footer{
+    background-color: rgb(191, 174, 153); 
+    padding: 30px 30px;
+    text-align: center;
+}
+    footer a{
+        text-decoration: none;
+    }
+        footer p{
+            font-size: 0.8em;
+            margin-top: 20px;
+        }
 h1{
     color: black;
 }
-
 section div h1{
     color: black;
     font-size: 2em;
@@ -49,9 +61,6 @@ section div p{
     font-size: 20px;
     padding: 10px 30px;
 }
-footer p{
-    margin-top: 20px;
-}
 
 .center-txt{
     text-align: center;
@@ -62,13 +71,6 @@ footer p{
     height: auto;
     margin: 50px auto;
     padding: 20px 30px;
-}
-
-.footer{
-    font-size: 0.8em;
-    text-align: center;
-    background-color: rgb(191, 174, 153);
-    padding: 30px 30px;
 }
 
 .header-img{
@@ -96,17 +98,14 @@ footer p{
 
 /* SERVICIOS */
 
-.serv-h1{
-    margin-bottom: 50px;
-}
-
-.servicios-titles{
+.serv-titles{
     font-size: 2em;
+    font-weight: bold;
     color: black;
     padding: 20px 30px;
 }
 
-.servicios-p{
+.serv-p{
     border: dashed 5px rgb(230, 136, 154);
     line-height: 40px;
     margin: 20px 30px;
