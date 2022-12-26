@@ -7,33 +7,51 @@
     <title>Laura Modista - Taller de costura, arreglo y confección</title>
     <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="img/logo.jpeg" alt="Logo de Laura Modista">
-        </a>
-        <ul>
-            <li> <a href="pages/maquinas.html">Máquinas</a> </li>
-            <li> <a href="pages/galeria.html">Galería</a> </li>
-            <li> <a href="pages/servicios.html">Servicios</a> </li>
-            <li> <a href="pages/contacto.html">Contacto</a> </li>
-        </ul>
-    </nav>
+    
+    <nav class="navbar navbar-expand-lg bg-pinkish">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="Logo de Laura Modista">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link link-light" href="pages/maquinas.html">Máquinas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-light" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
 <header>
-    <img class="header-img" src="img/header.jpg" alt="Dedal, alfileres y una cinta métrica sobre una mesa blanca">
+    <img src="img/header.jpg" class="w-100" alt="Dedal, alfileres y una cinta métrica sobre una mesa blanca"> 
 </header>
 
     <main>
         <section class="flex">
-            <div class="div-model center-txt">
+            <div class="div-model text-center">
                 <h1>Bienvenidos al Taller de Laura</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates dolorum necessitatibus, rem ex facere praesentium quos. Minima, optio. Molestias inventore necessitatibus delectus sequi odio possimus eius neque similique? Assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem labore minima id? Illum fuga nulla maxime voluptas sint, rem aspernatur doloribus veritatis repudiandae quisquam optio harum labore? Eius, aperiam eos.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates dolorum necessitatibus, rem ex facere praesentium quos. Minima, optio. Molestias inventore necessitatibus delectus sequi odio possimus eius neque similique? Assumenda. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem labore minima id? Illum fuga nulla maxime voluptas sint, rem aspernatur doloribus veritatis repudiandae quisquam optio harum labore? Eius, aperiam eos.</p>
             </div>
-                <img class="img-model" src="img/img3.jpg" alt="Sticker si puedes soñarlo puedes hacerlo">
+                <!-- <img src="img/sticker.jpg" class="img-model" alt="Sticker si puedes soñarlo puedes hacerlo">  -->
         </section>
     </main>
+
     <footer>
          <a href="https://www.whatsapp.com/?lang=es" target="_blank"> 
             <img src="icons/icon-wsp.png" alt="Ícono de WhatsApp"> 
@@ -46,5 +64,7 @@
         </a> 
             <p>Copyright © 2023</p> 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

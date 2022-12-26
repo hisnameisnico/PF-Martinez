@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans:wght@600&display=swap');
 
 *{
-    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 /* INDEX / INICIO */
@@ -13,27 +13,10 @@ body{
     background-attachment: fixed;
 }
 
-nav{
-    background-color: rgb(230, 136, 154);
-    padding: 8px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav ul li{
+    margin: 20px;
 }
-    nav ul{
-        display: flex;
-        list-style: none;
-    }
-        nav ul li{
-            margin: 30px;
-        }
-            nav ul li a{
-                text-decoration: none;
-                color: white;
-            }
-                nav ul li a:hover{
-                    color: black;
-                }
+
 footer{
     background-color: rgb(191, 174, 153); 
     padding: 30px 30px;
@@ -46,7 +29,8 @@ footer{
             font-size: 0.8em;
             margin-top: 20px;
         }
-h1{
+
+h1,h2{
     color: black;
 }
 section div h1{
@@ -57,12 +41,8 @@ section div h1{
 }
 section div p{
     line-height: 45px;
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 10px 30px;
-}
-
-.center-txt{
-    text-align: center;
 }
 
 .model{
@@ -72,27 +52,19 @@ section div p{
     padding: 20px 30px;
 }
 
-.header-img{
-    width: 100%;
-}
-
-.flex{
-    display: flex;
-}
-
 .div-model{
-    width: 65%;
+    width: 100%;
     height: auto;
-    margin: 30px 30px;
-    padding: 30px 30px;
+    margin: 30px;
+    padding: 30px;
     border: dashed 5px rgb(230, 136, 154);
 }
 
 .img-model{
-    width: 35%;
+    width: 30%;
     height: auto;
-    margin: 20px 30px;
-    padding: 10px 30px;
+    margin: 30px;
+    padding: 30px;
 }
 
 /* SERVICIOS */
@@ -102,11 +74,103 @@ section div p{
     font-weight: bold;
     color: black;
     padding: 20px 30px;
+    text-align: center;
 }
 
 .serv-p{
-    border: dashed 5px rgb(230, 136, 154);
-    line-height: 40px;
     margin: 20px 30px;
     padding: 20px 30px;
+    font-size: 1.2em;
+    line-height: 40px;
+    border: dashed 5px rgb(230, 136, 154);
+    text-align: center;
+}
+
+/* MÁQUINAS */
+
+.maq-fig{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.maq-p{
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding-left: 20px;
+    font-size: 1.2em;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* GALERIA */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    padding: 1em;
+    gap: 1em;
+}
+.gal-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.gal-area:nth-child(13){
+    grid-column-start: span 2;
+}
+.gal-area:nth-child(16){
+    grid-column-start: span 2;
+}
+
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .gal-area:nth-child(13){
+        grid-column-start: span 2;
+    }
+    .gal-area:nth-child(16){
+        grid-column-start: span 2;
+    }
+}
+@media (min-width: 1024px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gal-area:nth-child(13){
+        grid-column-start: span 3;
+    }
+    .gal-area:nth-child(16){
+        grid-column-start: span 3;
+    }
+}
+/* GENERAL */
+
+.flex{
+    display: flex;
+}
+
+.jc-evenly{
+    justify-content: space-evenly;
+}
+
+.jc-around{
+    justify-content: space-around;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+.bg-pinkish{
+    background-color: rgb(230, 136, 154);
+}
+
+footer a img:hover{
+    transform: rotateZ(-30deg);
+    cursor: pointer;
+    transition: all 1s;
 }

@@ -1,0 +1,38 @@
+Starter template
+https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+Navbar
+https://getbootstrap.com/docs/5.2/components/navbar/
+
+Carousel
+https://getbootstrap.com/docs/5.2/components/carousel/
+
+Grid
+https://getbootstrap.com/docs/5.2/layout/grid/
+
+Forms
+https://getbootstrap.com/docs/5.2/forms/overview/
+
+Text Align
+https://getbootstrap.com/docs/5.2/utilities/text/#text-alignment
+
+Text colors
+https://getbootstrap.com/docs/5.2/utilities/colors/
+
+Bg colors
+https://getbootstrap.com/docs/5.2/utilities/background/#background-color
+
+Rounded
+https://getbootstrap.com/docs/5.2/utilities/borders/#sizes
+
+Buttons
+https://getbootstrap.com/docs/5.2/components/buttons/
+
+Lists
+https://getbootstrap.com/docs/5.2/components/list-group/
+
+Spacing - margin - padding
+https://getbootstrap.com/docs/5.2/utilities/spacing/
+
+Sizing
+https://getbootstrap.com/docs/5.2/utilities/sizing/
