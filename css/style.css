@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
 
 *{
@@ -5,18 +7,43 @@
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
 }
-
-/* INDEX / INICIO */
-
+.model{
+    width: 80%;
+    height: auto;
+    margin: 50px auto;
+    padding: 20px 30px;
+}
+.flex{
+    display: flex;
+}
+.jc-evenly{
+    justify-content: space-evenly;
+}
+.jc-around{
+    justify-content: space-around;
+}
+.jc-between{
+    justify-content: space-between;
+}
+.bg-pinkish{
+    background-color: rgb(230, 136, 154);
+}
+footer a img:hover{
+    transform: rotateZ(-20deg);
+    cursor: pointer;
+    transition: all 1s;
+}
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
 body{
     background-image: url(../img/sewing-pattern.jpg);
     background-attachment: fixed;
 }
-
 nav ul li{
     margin: 20px;
 }
-
 .anim-underline ul li a{
     background: linear-gradient(currentColor,currentColor);
     background-position: 0% 100%;
@@ -27,7 +54,6 @@ nav ul li{
 .anim-underline ul li a:hover{
     background-size: 100% 2px;
 }
-
 footer{
     background-color: rgb(191, 174, 153); 
     padding: 30px 30px;
@@ -40,7 +66,6 @@ footer{
             font-size: 0.8em;
             margin-top: 20px;
         }
-
 h1,h2{
     color: black;
     animation-name: appear;
@@ -58,12 +83,7 @@ section div p{
     padding: 10px 30px;
 }
 
-.model{
-    width: 80%;
-    height: auto;
-    margin: 50px auto;
-    padding: 20px 30px;
-}
+/* INDEX / INICIO */
 
 .div-model{
     width: 100%;
@@ -74,7 +94,6 @@ section div p{
     animation-name: appear;
     animation-duration: 3s;
 }
-
 .img-model{
     width: 30%;
     height: auto;
@@ -90,7 +109,6 @@ section div p{
     animation-name: appear;
     animation-duration: 3s;
 }
-
 .maq-p{
     margin-left: 40px;
     margin-right: 50px;
@@ -124,7 +142,6 @@ section div p{
 .gal-area:nth-child(16){
     grid-column-start: span 2;
 }
-
 @media (min-width: 768px){
     .grid{
         grid-template-columns: repeat(3,1fr);
@@ -159,7 +176,6 @@ section div p{
     animation-name: appear;
     animation-duration: 3s;
 }
-
 .serv-p{
     margin: 20px 30px;
     padding: 20px 30px;
@@ -175,39 +191,4 @@ section div p{
 
 .grad-button{
     background: linear-gradient(to top, pink, rgb(230, 136, 154));
-}
-
-
-/* GENERAL */
-
-.flex{
-    display: flex;
-}
-
-.jc-evenly{
-    justify-content: space-evenly;
-}
-
-.jc-around{
-    justify-content: space-around;
-}
-
-.jc-between{
-    justify-content: space-between;
-}
-
-.bg-pinkish{
-    background-color: rgb(230, 136, 154);
-}
-
-footer a img:hover{
-    transform: rotateZ(-20deg);
-    cursor: pointer;
-    transition: all 1s;
-}
-
-@keyframes appear{
-
-    from{opacity: 0;}
-    to{opacity: 1;}
 }
