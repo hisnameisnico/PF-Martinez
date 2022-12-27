@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
 
 *{
     margin: 0;
@@ -17,6 +17,17 @@ nav ul li{
     margin: 20px;
 }
 
+.anim-underline ul li a{
+    background: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.anim-underline ul li a:hover{
+    background-size: 100% 2px;
+}
+
 footer{
     background-color: rgb(191, 174, 153); 
     padding: 30px 30px;
@@ -32,6 +43,8 @@ footer{
 
 h1,h2{
     color: black;
+    animation-name: appear;
+    animation-duration: 3s;
 }
 section div h1{
     color: black;
@@ -58,6 +71,8 @@ section div p{
     margin: 30px;
     padding: 30px;
     border: dashed 5px rgb(230, 136, 154);
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 .img-model{
@@ -67,30 +82,13 @@ section div p{
     padding: 30px;
 }
 
-/* SERVICIOS */
-
-.serv-titles{
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-    padding: 20px 30px;
-    text-align: center;
-}
-
-.serv-p{
-    margin: 20px 30px;
-    padding: 20px 30px;
-    font-size: 1.2em;
-    line-height: 40px;
-    border: dashed 5px rgb(230, 136, 154);
-    text-align: center;
-}
-
 /* MÁQUINAS */
 
 .maq-fig{
     margin-left: 50px;
     margin-bottom: 50px;
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 .maq-p{
@@ -101,6 +99,8 @@ section div p{
     font-size: 1.2em;
     line-height: 40px;
     text-align: center;
+    animation-name: appear;
+    animation-duration: 3s;
 }
 
 /* GALERIA */
@@ -147,6 +147,37 @@ section div p{
         grid-column-start: span 3;
     }
 }
+
+/* SERVICIOS */
+
+.serv-titles{
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    padding: 20px 30px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+.serv-p{
+    margin: 20px 30px;
+    padding: 20px 30px;
+    font-size: 1.2em;
+    line-height: 40px;
+    border: dashed 5px rgb(230, 136, 154);
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+/* CONTACTO */
+
+.grad-button{
+    background: linear-gradient(to top, pink, rgb(230, 136, 154));
+}
+
+
 /* GENERAL */
 
 .flex{
@@ -170,7 +201,13 @@ section div p{
 }
 
 footer a img:hover{
-    transform: rotateZ(-30deg);
+    transform: rotateZ(-20deg);
     cursor: pointer;
     transition: all 1s;
+}
+
+@keyframes appear{
+
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
