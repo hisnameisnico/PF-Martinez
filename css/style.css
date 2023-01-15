@@ -8,10 +8,8 @@
     font-family: 'Noto Sans', sans-serif;
 }
 .model{
-    width: 80%;
-    height: auto;
     margin: 50px auto;
-    padding: 20px 30px;
+    padding: 25px;
 }
 .flex{
     display: flex;
@@ -36,6 +34,10 @@ footer a img:hover{
 @keyframes appear{
     from{opacity: 0;}
     to{opacity: 1;}
+}
+.slowly-appear{
+    animation-name: appear;
+    animation-duration: 3s;
 }
 body{
     background-image: url(../img/sewing-pattern.jpg);
@@ -66,59 +68,25 @@ footer{
             font-size: 0.8em;
             margin-top: 20px;
         }
-h1,h2{
+
+h1,h2,p{
     color: black;
-    animation-name: appear;
-    animation-duration: 3s;
-}
-section div h1{
-    color: black;
-    font-size: 2em;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-section div p{
-    line-height: 45px;
-    font-size: 1.2em;
-    padding: 10px 30px;
 }
 
 /* INDEX / INICIO */
 
-.div-model{
-    width: 100%;
-    height: auto;
+.section-model{
     margin: 30px;
     padding: 30px;
     border: dashed 5px rgb(230, 136, 154);
-    animation-name: appear;
-    animation-duration: 3s;
-}
-.img-model{
-    width: 30%;
-    height: auto;
-    margin: 30px;
-    padding: 30px;
-}
-
-/* MÁQUINAS */
-
-.maq-fig{
-    margin-left: 50px;
-    margin-bottom: 50px;
-    animation-name: appear;
-    animation-duration: 3s;
-}
-.maq-p{
-    margin-left: 40px;
-    margin-right: 50px;
-    margin-top: 50px;
-    padding-left: 20px;
+    line-height: 2.5em;
     font-size: 1.2em;
-    line-height: 40px;
-    text-align: center;
-    animation-name: appear;
-    animation-duration: 3s;
+}
+
+/* MAQUINAS */
+
+.grad-card{
+    background: linear-gradient(to top, pink, rgb(230, 136, 154));
 }
 
 /* GALERIA */
@@ -167,24 +135,15 @@ section div p{
 
 /* SERVICIOS */
 
-.serv-titles{
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
-    padding: 20px 30px;
-    text-align: center;
-    animation-name: appear;
-    animation-duration: 3s;
-}
-.serv-p{
-    margin: 20px 30px;
+.article-model{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     padding: 20px 30px;
     font-size: 1.2em;
-    line-height: 40px;
+    line-height: 2.5em;
     border: dashed 5px rgb(230, 136, 154);
     text-align: center;
-    animation-name: appear;
-    animation-duration: 3s;
 }
 
 /* CONTACTO */
