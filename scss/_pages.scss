@@ -1,0 +1,76 @@
+// index / inicio
+
+.section-model{
+    margin: 30px;
+    padding: 30px;
+    border: $pink-border;
+    font-size: $md-font;
+    line-height: 2.5em;
+    text-align: center;
+}
+
+// máquinas
+
+.grad-card{
+    background: $grad-color;
+}
+
+// galería
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    padding: 1em;
+    gap: 1em;
+}
+.gal-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.gal-area:nth-child(13){
+    grid-column-start: span 2;
+}
+.gal-area:nth-child(16){
+    grid-column-start: span 2;
+}
+@media (min-width: 768px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .gal-area:nth-child(13){
+        grid-column-start: span 2;
+    }
+    .gal-area:nth-child(16){
+        grid-column-start: span 2;
+    }
+}
+@media (min-width: 1024px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .gal-area:nth-child(13){
+        grid-column-start: span 3;
+    }
+    .gal-area:nth-child(16){
+        grid-column-start: span 3;
+    }
+}
+
+// servicios
+
+.article-model{
+    @extend .section-model;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px 30px;
+}
+
+// contacto
+
+.grad-button{
+    background: $grad-color;
+}

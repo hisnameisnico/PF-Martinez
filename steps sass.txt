@@ -1,0 +1,16 @@
+1- DESCARGAR E INSTALAR NodeJs ------ https://nodejs.org/es/
+2- TERMINAL ---- npm -v  ---- node -v
+3- TERMINAL ---- (cd) change directory a mi proyecto
+4- TERMINAL ---- npm init
+5- TERMINAL ---- npm install sass
+6- TERMINAL ---- Abrir package.json
+7- TERMINAL ---- Agregar los sgt comandos donde estan los scripts --- 
+		"sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+8- TERMINAL ---- npm run sass:watch
+
+
+Live Sass Compiler
+https://medium.com/@cristian.sanso/c%C3%B3mo-compilar-mi-c%C3%B3digo-sass-cc57bc4e7b7
+
+https://hoohoo.top/blog/20210703113717-how-to-customerize-the-live-sass-compiler-settings-for-output-formats/

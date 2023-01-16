@@ -1,0 +1,62 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}
+body{
+    background-image: url(../img/sewing-pattern.jpg);
+    background-attachment: fixed;
+}
+h1,h2,p{
+    color: $font-color;
+}
+
+// animación aparición lenta
+
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.slowly-appear{
+    animation-name: appear;
+    animation-duration: 3s;
+}
+
+.model{
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.flex{
+    display: flex;
+}
+.jc-evenly{
+    justify-content: space-evenly;
+}
+.jc-around{
+    justify-content: space-around;
+}
+.jc-between{
+    justify-content: space-between;
+}
+
+
+// animación navbar
+
+.anim-underline{
+    ul{
+        li{
+            a{
+                background: linear-gradient(currentColor,currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .3s;
+                &:hover{
+                    background-size: 100% 2px;
+                }
+            }
+        }
+    }
+}

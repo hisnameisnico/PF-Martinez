@@ -1,0 +1,39 @@
+// imports
+
+@import "_vars";
+@import "_general";
+@import "_pages";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+
+// nav
+
+nav{
+    background-color: $main-color;
+    ul{
+        li{
+            margin: 20px;
+        }
+    }
+}
+
+// footer
+
+footer{
+    background-color: $footer-color;
+    padding: 30px 30px;
+    text-align: center;
+    a{
+        text-decoration: none;
+        img{
+            &:hover{
+                transform: rotateZ(-20deg);
+                cursor: pointer;
+                transition: all 1s;
+            }
+        }
+    }
+    p{
+        font-size: $sm-font;
+        margin-top: 20px;
+    }
+}
