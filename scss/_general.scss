@@ -1,3 +1,4 @@
+// general
 
 *{
     margin: 0;
@@ -7,9 +8,6 @@
 body{
     background-image: url(../img/sewing-pattern.jpg);
     background-attachment: fixed;
-}
-h1,h2,p{
-    color: $font-color;
 }
 
 // animación aparición lenta
@@ -22,6 +20,8 @@ h1,h2,p{
     animation-name: appear;
     animation-duration: 3s;
 }
+
+// modelo h1
 
 .model{
     margin: 50px auto;
@@ -41,14 +41,13 @@ h1,h2,p{
     justify-content: space-between;
 }
 
-
 // animación navbar
 
 .anim-underline{
     ul{
         li{
             a{
-                background: linear-gradient(currentColor,currentColor);
+                background: $navbar-grad;
                 background-position: 0% 100%;
                 background-repeat: no-repeat;
                 background-size: 0% 2px;
@@ -59,4 +58,18 @@ h1,h2,p{
             }
         }
     }
+}
+
+// mixin
+
+@mixin text($font-size,$line-height,$color){
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    font-family: $main-font;
+    text-align: center;
+}
+
+p{
+    @include text(1em,2.3em,black);
 }

@@ -26,7 +26,7 @@ footer{
         text-decoration: none;
         img{
             &:hover{
-                transform: rotateZ(-20deg);
+                transform: $rotate;
                 cursor: pointer;
                 transition: all 1s;
             }

@@ -10,10 +10,6 @@ body {
   background-attachment: fixed;
 }
 
-h1, h2, p {
-  color: black;
-}
-
 @keyframes appear {
   from {
     opacity: 0;
@@ -57,6 +53,14 @@ h1, h2, p {
 }
 .anim-underline ul li a:hover {
   background-size: 100% 2px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 2.3em;
+  color: black;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
 }
 
 .section-model, .article-model {
