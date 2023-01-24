@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +43,10 @@ body {
 
 .jc-between {
   justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
 }
 
 .anim-underline ul li a {
@@ -129,6 +134,20 @@ p {
 
 .grad-button {
   background: linear-gradient(to top, pink, rgb(230, 136, 154));
+}
+
+.error404-model {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-error404 {
+  padding: 20px;
+  background: linear-gradient(to top, pink, rgb(230, 136, 154));
+  text-align: center;
 }
 
 nav {

@@ -28,7 +28,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 .gal-area:nth-child(13){
     grid-column-start: span 2;
@@ -73,4 +72,20 @@
 
 .grad-button{
     background: $grad-color;
+}
+
+// próximamente
+
+.error404-model{ 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-error404{
+    padding: 20px;
+    background: $grad-color;
+    text-align: center;
 }
