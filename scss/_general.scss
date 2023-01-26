@@ -76,3 +76,19 @@ body{
 p{
     @include text(1em,2.3em,black);
 }
+h1{
+    @include text(1.5em,normal,black);
+}
+h2{
+    @include text(1.2em,normal,black);
+}
+
+// para textos de la página de máquinas (gracias por el truco profe!)
+
+.line-clamp{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
