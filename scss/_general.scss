@@ -26,6 +26,9 @@ body{
 .model{
     margin: 50px auto;
     padding: 25px;
+    font-size: $h1-font;
+    color: $font-color;
+    text-align: center;
 }
 
 .flex{
@@ -74,13 +77,10 @@ body{
 }
 
 p{
-    @include text(1em,2.3em,black);
+    @include text($p-font,2.2em,$font-color);
 }
-h1{
-    @include text(1.5em,normal,black);
-}
-h2{
-    @include text(1.2em,normal,black);
+label{
+    @include text($p-font,normal,$font-color);
 }
 
 // para textos de la página de máquinas (gracias por el truco profe!)

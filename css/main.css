@@ -26,6 +26,9 @@ body {
 .model {
   margin: 50px auto;
   padding: 25px;
+  font-size: 2.5em;
+  color: black;
+  text-align: center;
 }
 
 .flex {
@@ -60,23 +63,15 @@ body {
 }
 
 p {
-  font-size: 1em;
-  line-height: 2.3em;
+  font-size: 1.1em;
+  line-height: 2.2em;
   color: black;
   font-family: "Noto Sans", sans-serif;
   text-align: center;
 }
 
-h1 {
-  font-size: 1.5em;
-  line-height: normal;
-  color: black;
-  font-family: "Noto Sans", sans-serif;
-  text-align: center;
-}
-
-h2 {
-  font-size: 1.2em;
+label {
+  font-size: 1.1em;
   line-height: normal;
   color: black;
   font-family: "Noto Sans", sans-serif;
@@ -95,8 +90,7 @@ h2 {
   margin: 30px;
   padding: 30px;
   border: dashed 5px rgb(230, 136, 154);
-  font-size: 1.2em;
-  line-height: 2.5em;
+  font-size: 1.1em;
   text-align: center;
 }
 
